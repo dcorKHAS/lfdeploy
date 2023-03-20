@@ -39,8 +39,8 @@ hg clone https://www.public-software-group.org/mercurial/liquid_feedback_fronten
 chown www-data /opt/liquid_feedback_frontend/tmp
 
 
-cd /opt/liquid_feedback_frontend/config
-cp example.lua myconfig.lua
+
+cp /opt/lfdeploy/configFile.lua myconfig.lua
 
 
 cd /opt/lfdeploy
