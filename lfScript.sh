@@ -28,6 +28,7 @@ bmake MOONBR_LUA_PATH=/opt/moonbridge/?.lua
 cd /opt/
 hg clone https://www.public-software-group.org/mercurial/webmcp
 cd webmcp
+cp /opt/lfdeploy/Makefile.options /opt/webmcp/Makefile.options
 make
 cp -RL framework/* /opt/webmcp/
 
@@ -45,7 +46,7 @@ cp example.lua myconfig.lua
 cd /opt/lfdeploy
 cp lf_update.sh /opt/liquid_feedback_core/
 chmod +x /opt/liquid_feedback_core/lf_update.sh
-
+	
 mv liquid_feedback_core.service /etc/systemd/system/
 systemctl start liquid_feedback_core
 systemctl enable liquid_feedback_core
