@@ -1,0 +1,9 @@
+[Unit]
+Description=LiquidFeedback Frontend
+
+[Service]
+User=www-data
+ExecStart=/opt/liquid_feedback_frontend/run.sh
+
+[Install]
+WantedBy=multi-user.target

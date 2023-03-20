@@ -1,0 +1,9 @@
+[Unit]
+Description=LiquidFeedback Core update
+
+[Service]
+User=www-data
+ExecStart=/opt/liquid_feedback_core/lf_update.sh
+
+[Install]
+WantedBy=multi-user.target
