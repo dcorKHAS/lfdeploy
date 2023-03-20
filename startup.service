@@ -1,0 +1,9 @@
+[Unit]
+Description=LiquidFeedback startup
+
+[Service]
+User=root
+ExecStart=/opt/lfdeploy/startup.sh
+
+[Install]
+WantedBy=multi-user.target
