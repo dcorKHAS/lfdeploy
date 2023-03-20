@@ -53,9 +53,6 @@ cd /opt/lfdeploy
 cp run.sh /opt/liquid_feedback_frontend/
 chmod +x /opt/liquid_feedback_frontend/run.sh
 
-mv startup.service /etc/systemd/system/
-systemctl start startup
-systemctl enable startup
-
+chmod +x /opt/lfdeploy/startup.sh
 
 #chmod +x /opt/liquid_feedback_core/lf_updated
