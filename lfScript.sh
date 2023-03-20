@@ -2,7 +2,7 @@
 
 # Step 1: Install dependencies
 sudo apt-get update
-sudo apt-get install build-essential lua5.4 liblua5.4-dev postgresql postgresql-server-dev-all libpq-dev libbsd-dev bmake imagemagick lsb-release mercurial
+sudo apt-get install build-essential lua5.3 liblua5.3-dev postgresql postgresql-server-dev-all libpq-dev libbsd-dev bmake imagemagick lsb-release mercurial
 sudo pip install markdown2
 
 # Step 2: Grant access to web server user
@@ -29,6 +29,9 @@ cd /opt/
 hg clone https://www.public-software-group.org/mercurial/webmcp
 cd webmcp
 make
+cp -RL framework/* /opt/webmcp/
+
+
 
 cd /opt/
 hg clone https://www.public-software-group.org/mercurial/liquid_feedback_frontend
