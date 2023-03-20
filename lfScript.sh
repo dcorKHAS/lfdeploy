@@ -40,7 +40,7 @@ chown www-data /opt/liquid_feedback_frontend/tmp
 
 
 
-cp /opt/lfdeploy/configFile.lua myconfig.lua
+cp /opt/lfdeploy/configFile.lua /opt/liquid_feedback_frontend/config/myconfig.lua
 
 
 cd /opt/lfdeploy
