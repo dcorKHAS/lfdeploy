@@ -5,12 +5,6 @@ sudo -u www-data -s <<EOF
   # Navigate to the liquid_feedback_core directory
   cd /opt/liquid_feedback_core
 
-  # Create the liquid_feedback database
-  createdb liquid_feedback
-
-  # Run the core.sql script to set up the database tables
-  psql -v ON_ERROR_STOP=1 -f core.sql liquid_feedback
-
   # Connect to the liquid_feedback database and run the configuration commands
   psql liquid_feedback <<EOS
     INSERT INTO system_setting (member_ttl) VALUES ('1 year');
