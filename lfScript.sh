@@ -18,6 +18,9 @@ sudo -u www-data createdb liquid_feedback
 sudo -u www-data createlang plpgsql liquid_feedback
 sudo -u www-data psql -v ON_ERROR_STOP=1 -f core.sql liquid_feedback
 
+cd /opt/lfdeploy
+chmod +x databaseConfiguration.sh
+./databaseConfiguration.sh
 
 cd /opt/
 hg clone https://www.public-software-group.org/mercurial/moonbridge

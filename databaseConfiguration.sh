@@ -12,7 +12,7 @@ sudo -u www-data -s <<EOF
     INSERT INTO contingent (polling, time_frame, text_entry_limit, initiative_limit) VALUES (false, '1 day', 80, 12);
     INSERT INTO contingent (polling, time_frame, text_entry_limit, initiative_limit) VALUES (true, '1 hour', 200, 60);
     INSERT INTO contingent (polling, time_frame, text_entry_limit, initiative_limit) VALUES (true, '1 day', 800, 120);
-    INSERT INTO member (invite_code, admin) VALUES ('sesam', true);
+    INSERT INTO member (invite_code, admin) VALUES ('dcorus', true);
     \q
 EOS
 
