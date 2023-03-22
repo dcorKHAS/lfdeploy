@@ -2,7 +2,7 @@
 
 # Step 1: Install dependencies
 sudo apt-get update
-sudo apt-get install build-essential lua5.3 liblua5.3-dev postgresql postgresql-server-dev-all libpq-dev libbsd-dev bmake imagemagick lsb-release mercurial
+sudo apt-get install build-essential lua5.3 liblua5.3-dev postgresql postgresql-server-dev-13 libpq-dev libbsd-dev bmake imagemagick lsb-release mercurial python3-pip exim4
 sudo pip install markdown2
 
 # Step 2: Grant access to web server user
@@ -58,4 +58,6 @@ chmod +x /opt/liquid_feedback_frontend/run.sh
 
 chmod +x /opt/lfdeploy/startup.sh
 
-#chmod +x /opt/liquid_feedback_core/lf_updated
+dpkg-reconfigure exim4-config
+
+crontab -e
